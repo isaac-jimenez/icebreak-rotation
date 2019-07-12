@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+
 .splash-container {
   display: flex;
   justify-content: center;
@@ -8,12 +11,11 @@
 }
 
 h1 {
-  margin-top: -2em;
-  font-family: 'debby', 'arial', sans-serif;
-  letter-spacing: 4px;
-  position: relative;
+  margin-top: -3em;
+  /* font-family: 'Great Vibes', 'system-ui', cursive; */
+  font-family: 'Merienda', 'system-ui', cursive;
   color: white;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .lds-dual-ring {

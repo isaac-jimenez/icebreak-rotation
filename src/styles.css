@@ -1,13 +1,5 @@
 /* Add application styles & imports to this file! */
-@font-face {
-  font-family: debby;
-  src: url(assets/fonts/Debby.otf) format("opentype");
-}
-
-@font-face {
-  font-family: karla;
-  src: url(assets/fonts/Karla.ttf) format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
 html, body {
   height: 100%;
@@ -15,7 +7,7 @@ html, body {
 }
 
 * {
-  font-family: 'karla', 'arial', sans-serif;
+  font-family: 'Karla', 'system-ui', sans-serif;
 }
 
 p {
