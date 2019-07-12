@@ -1,1 +1,23 @@
 /* Add application styles & imports to this file! */
+@font-face {
+  font-family: debby;
+  src: url(assets/fonts/Debby.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: karla;
+  src: url(assets/fonts/Karla.ttf) format("truetype");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  font-family: 'karla', 'arial', sans-serif;
+}
+
+p {
+  font-size: 1.25em;
+}
