@@ -1,7 +1,7 @@
 /* Add application styles & imports to this file! */
 @font-face {
   font-family: debby;
-  src: url(assets/fonts/Debby.ttf) format("truetype");
+  src: url(assets/fonts/Debby.otf) format("opentype");
 }
 
 @font-face {
