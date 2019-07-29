@@ -16,8 +16,8 @@ export class SplashComponent implements OnInit, OnDestroy {
   constructor(private _router: Router) { }
 
   ngOnInit() {
-    // timer(4500).pipe(takeUntil(this.unsubscribe))
-    //   .subscribe(time => this._router.navigateByUrl(HOME));
+    timer(4500).pipe(takeUntil(this.unsubscribe))
+      .subscribe(time => this._router.navigateByUrl(HOME));
   }
 
   ngOnDestroy() {

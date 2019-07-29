@@ -11,13 +11,19 @@ export class HomeComponent implements OnInit {
   moderatorArray: Moderator[] = [];
   groups: number;
   round: number;
+  editMods:boolean;
 
   constructor() {
     this.groups = 0;
     this.round = 0;
+    this.editMods = true;
   }
 
   ngOnInit() {}
+
+  public toggleMods(): void {
+    this.editMods = !this.editMods;
+  }
 
   public addModerator(): void {
     const arrayLength = this.moderatorArray.length ? this.moderatorArray.length : 0;
@@ -25,7 +31,8 @@ export class HomeComponent implements OnInit {
     this.moderatorArray.push({
       id: id,
       name: null,
-      topic: null
+      topic: null,
+      currentParticipants: []
     });
   }
 
@@ -58,7 +65,7 @@ export class HomeComponent implements OnInit {
     if (this.participantArray)
     if ((this.participantArray.length % this.moderatorArray.length) === 0) {}
     if(this.round === 0) {
-      
+      this.editMods = false;
     }
     this.round++;
   }
